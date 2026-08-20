@@ -1,0 +1,252 @@
+body {
+    background-image: url(fundo3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+
+h1 {
+    color: gold;
+    font-size: 50px;
+    letter-spacing: 4px;
+    padding-bottom: 35px;
+    font-family: "Fjalla One";
+}
+
+h1 img {
+    width: 300px;
+    height: auto;
+    
+}
+
+h2 {
+    color: white;
+    font-family: "gta";
+    margin: 3px;
+
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+    
+}
+
+h3{
+    text-align: right;
+    font-size: 30px;
+    font-family: "gta";
+}
+
+
+nav {
+    margin-top: 60px;
+    font-family: "Fjalla One";
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 5px;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+}
+
+header {
+    text-align: center;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    width: 500px;
+    padding: 10%;
+}
+
+@font-face {
+    font-family: "gta";
+    src: url("fonts/pricedown/Pricedown\ Bl.otf");
+}
+
+
+
+
+
+
+
+.menu-btn{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    order: -1;
+    align-self: flex-start;
+}
+
+.menu-btn img{
+    position: absolute;
+    width: 55px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.menu-btn:hover span {
+    opacity: 0;
+}
+
+.menu-btn:hover img{
+    opacity: 1;
+} 
+.menu{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: rgba(140, 139, 139, 0.3);
+    padding: 8px;
+
+}
+
+.menu a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.70s;
+   
+}
+
+.menu a:hover {
+    color: purple;
+    transform: translateX(5px);
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    
+    
+}
+
+#menu-toggle {
+    display: none;
+}
+
+ #menu-toggle:checked ~ .menu-links {
+        display: flex; }
+
+.menu-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo-menu {
+    width: 90px;
+    height: auto;
+    transition: 0.4s;
+}
+.logo-menu:hover{
+    transform: scale(1.5) rotate(-3deg);
+    filter: brightness(1.3);
+    transform: scale(1.1) translateY(-5px);
+    transition: 0.3s;
+    opacity: 0s;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item span{
+    transition: 0.3s;
+}
+
+.menu-item:hover span {
+    opacity: 0;
+}
+
+.menu-item .logo-menu{
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-item:hover .logo-menu{
+    opacity: 1;
+}
+
+
+.fontp{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    font-family: "Great Vibes";
+    letter-spacing: 0.80px;
+}
+
+
+
+.painel{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+
+    text-align: center;
+    padding: 30px;
+    border: 3px solid gold;
+    border-radius: 60px;
+}
+
+.painel h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+    
+}
+
+.painel video {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+    
+}
+
+.painel2 {
+    position: relative;
+    z-index: 1;
+}
+
+.corroxo{
+    color: purple;
+    font-size: 30px;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.projetoinfo{
+    text-align: left;
+    font-size: 30px;
+}
+
+.projetoinfo a{
+    text-align: right;
+    font-size: 30px;
+}
+.video-projeto{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
